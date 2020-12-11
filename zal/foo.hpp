@@ -9,8 +9,9 @@
 std::vector< char > foo(std::list< Human >& people)
 {
     std::vector< char > ret_v(people.size());
+    std::for_each(people.rbegin(), people.rend(), birthday)
+        // std::for_each(Human p : people) { p.birthday; }
+        // Twoja implementacja tutaj
 
-    // Twoja implementacja tutaj
-
-    return ret_v;
+        return ret_v;
 }
